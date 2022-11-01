@@ -1,0 +1,96 @@
+.container {
+  width: 100%;
+  max-width: 1140px;
+  min-height: calc(100vh - 2.5rem);
+  margin: 0 auto;
+  padding: 7.5rem 0.75rem 0;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem auto 0;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgb(229, 229, 229);
+}
+
+.cardImage {
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--dark-color);
+  z-index: 10;
+}
+
+p,
+.btnLink {
+  font-size: 0.875rem;
+}
+
+.btnLink {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--primary-color);
+}
+
+.btnLink span {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnLink:hover {
+  text-decoration: underline;
+}
+
+.author {
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    grid-template-columns: 380px 1fr;
+    gap: 2rem;
+  }
+
+  .cardImage {
+    height: 220px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    color: var(--dark-color);
+  }
+
+  p,
+  .btnLink {
+    font-size: 1rem;
+  }
+
+  .author {
+    font-size: 0.875rem;
+  }
+}

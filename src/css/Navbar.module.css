@@ -1,0 +1,44 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  z-index: 100;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  min-height: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 1rem 0.75rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 140px;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    min-height: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 170px;
+  }
+}

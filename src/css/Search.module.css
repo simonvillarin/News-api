@@ -1,0 +1,40 @@
+form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--dark-color);
+  border-radius: 0.25rem;
+  border: 2px solid var(--primary-color);
+}
+
+.search,
+.close {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.search {
+  left: 0.75rem;
+}
+
+.close {
+  right: 0.75rem;
+}
+
+@media screen and (min-width: 600px) {
+  form {
+    width: 380px;
+  }
+}
